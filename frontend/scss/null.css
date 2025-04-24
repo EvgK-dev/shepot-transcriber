@@ -1,0 +1,97 @@
+/* Сброс отступов, границ и padding */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  /* Убираем обводку при фокусе */
+  :focus,
+  :active {
+    outline: none;
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  /* Задаём блочный тип для семантических тегов */
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  /* Основные настройки html и body */
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #000;
+    background-color: #fff;
+    scroll-behavior: smooth;
+  }
+  
+  /* Унаследовать шрифт в элементах форм */
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  /* Убираем крестик в IE */
+  input::-ms-clear {
+    display: none;
+  }
+  
+  /* Убираем лишние отступы у кнопок */
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  /* Ссылки без подчёркивания */
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  /* Убираем маркеры у списков */
+  ul li {
+    list-style: none;
+  }
+  
+  /* Вертикальное выравнивание изображений */
+  img {
+    vertical-align: top;
+  }
+  
+  /* Сброс стилей заголовков */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+  
